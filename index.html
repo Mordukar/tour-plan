@@ -10,6 +10,7 @@
     />
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -115,8 +116,8 @@
               <span class="offer hotel-info__offer">Flash Offer</span>
             </div>
             <p class="hotel-description hotel-info__description">
-              Half-Board/ All Inclusive + Complimentary Activities + Child Stays
-              Free
+              Half-Board/ All Inclusive + Complimentary Activities +
+              Child&nbsp;Stays&nbsp;Free
             </p>
           </div>
           <div class="rating hotel-info__rating">
@@ -124,8 +125,41 @@
             <span class="rating__counter">4.5/5</span>
           </div>
         </div>
+        <div class="hotel-grid">
+          <div class="slider">
+            <!-- Slider main container -->
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="./img/slide-1.jpg" alt="slide" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/slide-2.jpg" alt="slide" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/slide-3.jpg" alt="slide" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/slide-4.jpg" alt="slide" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/slide-5.jpg" alt="slide" />
+                </div>
+                ...
+              </div>
+
+              <!-- If we need navigation buttons -->
+              <button class="slider-button slider-button__prev"></button>
+              <button class="slider-button slider-button__next"></button>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- /.container -->
     </section>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
