@@ -20,8 +20,8 @@ var reviewsSlider = new Swiper(".reviews-slider", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".hotel-slider__button__next",
-    prevEl: ".hotel-slider__button__prev",
+    nextEl: ".reviews-slider__button--next",
+    prevEl: ".reviews-slider__button--prev",
   },
 
   keyboard: {
