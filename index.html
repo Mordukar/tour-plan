@@ -8,15 +8,6 @@
       src="https://api-maps.yandex.ru/2.1/?apikey=624a0edc-f8a0-42b8-bdba-0ef9b87a68da&lang=ru_RU"
       type="text/javascript"
     ></script>
-    <script type="text/javascript">
-      ymaps.ready(init);
-      function init() {
-        var myMap = new ymaps.Map("map", {
-          center: [24.462887675887234, 54.32597486128361],
-          zoom: 17,
-        });
-      }
-    </script>
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
@@ -179,7 +170,6 @@
                   alt="slide"
                 />
               </div>
-              ...
             </div>
 
             <!-- If we need navigation buttons -->
@@ -240,7 +230,11 @@
       </div>
       <!-- /.container -->
     </section>
-    <section class="newsletter">
+    <section
+      class="newsletter parralax-window"
+      data-parallax="scroll"
+      data-image-src="img/newsletter-bg.jpg"
+    >
       <div class="newsletter-wrapper">
         <h2 class="newsletter-title newsletter__title">
           subscribe to our
@@ -373,7 +367,9 @@
         <!-- /.reviews-slider -->
       </div>
     </section>
-    <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

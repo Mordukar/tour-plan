@@ -13,6 +13,19 @@ var hotelSlider = new Swiper(".hotel-slider", {
     onlyInViewport: true,
   },
 });
+// Карты
+ymaps.ready(init);
+function init() {
+  var myMap = new ymaps.Map("map", {
+    center: [24.462887675887234, 54.32597486128361],
+    zoom: 17,
+  });
+}
+
+$(".parallax-window").parallax({
+  imageSrc: "img/newsletter-bg.jpg",
+  speed: "0.5",
+});
 
 var reviewsSlider = new Swiper(".reviews-slider", {
   // Optional parameters
