@@ -535,6 +535,7 @@ template {
 .hotel-info__name {
   margin-top: 4px;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 
 .hotel-info__description {
@@ -587,6 +588,7 @@ template {
 .hotel-slider {
   width: 728px;
   height: 450px;
+  margin: 0;
 }
 
 .hotel-slider__item {
@@ -805,8 +807,8 @@ template {
 .map {
   width: 100%;
   height: 213px;
-  background-color: #111111;
-  border-radius: 4px;
+  background-color: #0A223D;
+  border-radius: 8px;
   owerflow: hidden;
 }
 
@@ -892,6 +894,7 @@ template {
 .subscribe__button {
   position: absolute;
   min-width: 65px;
+  max-width: 40%;
   right: 0;
   top: 0;
   height: 100%;
