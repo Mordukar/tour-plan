@@ -42,3 +42,5 @@ var reviewsSlider = new Swiper(".reviews-slider", {
     onlyInViewport: true,
   },
 });
+
+var menuButton = document.querySelector(".menu-button");
