@@ -1412,7 +1412,7 @@ img {
   position: fixed;
   top: 50%;
   left: 50%;
-  max-width: 478px;
+  width: 478px;
   padding: 33px 88px;
   border-radius: 8px;
   background-color: #0A223D;
@@ -1802,10 +1802,11 @@ img {
         flex-basis: 100%;
   }
   .modal__dialog {
+    width: 90%;
     max-height: 90%;
     overflow-y: scroll;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   .modal__button {
     margin-bottom: 10px;
@@ -1813,6 +1814,9 @@ img {
 }
 
 @media (max-width: 576px) {
+  .navbar-menu__item--mobile--visible {
+    width: 70%;
+  }
   .logo {
     width: 99px;
   }
@@ -1934,6 +1938,9 @@ img {
   .footer-wrapper {
     -ms-grid-columns: minmax(100px, 300px);
         grid-template-columns: minmax(100px, 300px);
+  }
+  .navbar-menu__item--mobile--visible {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */

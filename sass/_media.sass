@@ -224,13 +224,20 @@
       flex-basis: 100%
   .modal
     &__dialog
+      width: 90%
       max-height: 90%
       overflow-y: scroll
-      padding-left: 10%
-      padding-right: 10%
+      padding-left: 5%
+      padding-right: 5%
     &__button
       margin-bottom: 10px
 @media ( max-width: 576px)
+  .navbar
+    &-menu
+      &__item
+        &--mobile
+          &--visible
+            width: 70%
   .logo
     width: 99px
   .hotel
@@ -309,3 +316,9 @@
   .footer
     &-wrapper
       grid-template-columns: minmax(100px, 300px)
+  .navbar
+    &-menu
+      &__item
+        &--mobile
+          &--visible
+            width: 90%
