@@ -1456,7 +1456,7 @@ img {
 
 .modal__message {
   width: 100%;
-  min-width: 123px;
+  min-height: 123px;
   margin-bottom: 15px;
 }
 
@@ -1800,6 +1800,15 @@ img {
   .footer__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .modal__dialog {
+    max-height: 90%;
+    overflow-y: scroll;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .modal__button {
+    margin-bottom: 10px;
   }
 }
 
