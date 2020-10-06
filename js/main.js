@@ -52,8 +52,8 @@ $(document).ready(function () {
       .classList.toggle("navbar-bottom--visible");
   });
 
-  var modalButton = $("[data-toogle=modal]");
-  var closeMpdalButton = $("[modal__close]");
+  var modalButton = $("[data-toggle=modal]");
+  var closeModalButton = $(".modal__close");
   modalButton.on("click", openModal);
   closeModalButton.on("click", closeModal);
 
