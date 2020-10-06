@@ -1399,6 +1399,8 @@ img {
   z-index: 100;
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 
 .modal__overlay--visible {
@@ -1420,6 +1422,8 @@ img {
   z-index: 101;
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 
 .modal__dialog--visible {
