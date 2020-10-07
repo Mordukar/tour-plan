@@ -14,6 +14,7 @@
     />
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/aos.css" />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -21,7 +22,7 @@
     <header class="navbar navbar--mobile--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="#" class="logo" data-aos="fade-up" data-aos-delay="300">
             <img
               src="./img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -30,6 +31,8 @@
           </a>
 
           <form
+            data-aos="fade-up"
+            data-aos-delay="300"
             action="#"
             class="search navbar__search navbar__search--mobile--hidden"
           >
@@ -43,7 +46,12 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+          <a
+            href="#"
+            class="user navbar__user navbar__user--mobile--hidden"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img
               src="./img/user-avatar.jpg"
               alt="avatar: Nathan"
@@ -411,7 +419,7 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up">
             <img
               src="img/activity-1.jpg"
               alt="activity-1"
@@ -421,7 +429,7 @@
             <button class="card__button">Book Now</button>
           </div>
           <!--/.card-->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up">
             <img
               src="img/activity-2.jpg"
               alt="activity-2"
@@ -431,7 +439,7 @@
             <button class="card__button">Book Now</button>
           </div>
           <!--/.card-->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up">
             <img
               src="img/activity-3.jpg"
               alt="activity-3"
@@ -441,7 +449,7 @@
             <button class="card__button">Book Now</button>
           </div>
           <!--/.card-->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up">
             <img
               src="img/activity-4.jpg"
               alt="activity-4"
@@ -691,6 +699,7 @@
     <script src="js/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
