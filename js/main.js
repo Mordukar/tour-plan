@@ -90,5 +90,5 @@ $(document).ready(function () {
       },
     });
   });
-  <script>AOS.init();</script>;
+  AOS.init();
 });
