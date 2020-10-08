@@ -22,7 +22,7 @@
       align-items: center
       min-width: 83px
       justify-content: space-between
-    &-network
+    &-networks
       display: flex
       align-items: start
       grid-row: 2 / 4
@@ -30,14 +30,16 @@
   &__contact
     &-details
       grid-column: span 2
+      grid-row: 4 / 5
     &-form
       grid-column: span 2
+      grid-row: 4 / 5
   &__ul
     padding: 0
     margin: 0
     list-style: none
   &__ul
-    &--horizonal
+    &--horizontal
       display: flex
       justify-content: space-between
       width: 283px
@@ -70,7 +72,7 @@
       margin-bottom: 20px
     &--horizontal
       font-size: 12px
-      line-height: 15
+      line-height: 15px
       color: $light
   &__form
     display: flex
@@ -98,15 +100,16 @@
     text-decoration: none
     color: inherit
   &__input
+    border-radius: 4px
     position: relative
     width: 100%
+    height: 50px
+    background-color: #fff
     &-group
       display: flex
       margin-bottom: 15px
-      //flex-basis: 48%
       padding-top: 0
       width: 255px
-      border-radius: 4px
   &__message
     background-color: #fff
     width: 100%
@@ -131,8 +134,18 @@
     min-height: 50px
     font-weight: bold
     font-size: 12px
-    line-height: 15
+    line-height: 15px
   &__sponsor
     width: 136px
     height: 22px
     margin-left: 277px
+  &__phone
+    &-link
+      text-decoration: none
+      color: inherit
+    &-text
+      margin: 0
+  &__mail
+    &-link
+      text-decoration: none
+      color: inherit
