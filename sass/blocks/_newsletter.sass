@@ -3,7 +3,7 @@
   padding: 98px 0 87px 0
   // background-image: url(../img/newsletter-bg.jpg)
   background-repeat: no-repeat
-  background-position: center 
+  background-position: center
   background-size: cover
   &:before
     content: ''
@@ -40,8 +40,6 @@
   position: relative
   width: 350px
   height: 55px
-  border-radius: 4px
-  overflow: hidden
   &__input
     position: absolute
     width: 100%
@@ -53,6 +51,8 @@
     font-weight: 300
     font-size: 14px
     line-height: 18px
+    overflow: visible
+    &-group
   &__button
     position: absolute
     min-width: 65px
@@ -63,3 +63,6 @@
     border: none
     background-color: $primary
     color: $light
+    overflow: visible
+    border-radius: 0 4px 4px 0
+    z-index: 2

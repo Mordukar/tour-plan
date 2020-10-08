@@ -14,14 +14,6 @@ $(document).ready(function () {
       onlyInViewport: true,
     },
   });
-  // Карты
-  ymaps.ready(init);
-  function init() {
-    var myMap = new ymaps.Map("map", {
-      center: [24.462887675887234, 54.32597486128361],
-      zoom: 17,
-    });
-  }
 
   $(".parallax-window").parallax({
     imageSrc: "img/newsletter-bg.jpg",

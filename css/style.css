@@ -404,6 +404,7 @@ img {
 }
 
 .subscribe__input-group label.invalid {
+  font-size: 12px;
   padding-top: 55px;
 }
 
@@ -937,8 +938,6 @@ input:focus, button:focus, textarea:focus {
   position: relative;
   width: 350px;
   height: 55px;
-  border-radius: 4px;
-  overflow: hidden;
 }
 
 .subscribe__input {
@@ -952,6 +951,7 @@ input:focus, button:focus, textarea:focus {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  overflow: visible;
 }
 
 .subscribe__button {
@@ -964,6 +964,9 @@ input:focus, button:focus, textarea:focus {
   border: none;
   background-color: #EC1F46;
   color: #ffffff;
+  overflow: visible;
+  border-radius: 0 4px 4px 0;
+  z-index: 2;
 }
 
 .reviews {

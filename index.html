@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
-    <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=624a0edc-f8a0-42b8-bdba-0ef9b87a68da&lang=ru_RU"
-      type="text/javascript"
-    ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
@@ -263,7 +259,10 @@
               </button>
             </div>
             <!-- /.booking -->
-            <div class="map" id="map"></div>
+            <div class="map" id="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3053.8387656224786!2d54.324752245076546!3d24.463036978473564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e65eb6785e20d%3A0x3e496dfca002f047!2sRadisson%20Blu%20Hotel%20%26%20Resort%2C%20Abu%20Dhabi%20Corniche!5e0!3m2!1sru!2sru!4v1602180595704!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+              </iframe>
+            </div>
             <!-- /.map -->
           </div>
           <!-- /.hotel-right -->
@@ -281,13 +280,17 @@
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
-        <form action="#" method="POST" class="subscribe newsletter__subscribe">
-          <input
-            type="text"
-            class="subscribe__input"
+        <form action="#" method="POST" class="form subscribe newsletter__subscribe" novalidate="novalidate">
+          <div class="subscribe__input-group">
+            <input
+            type="email"
+            class="input subscribe__input invalid"
             placeholder="Your email address"
             name="email"
+            required
+            aria-invalid="true"
           />
+          </div>
           <button class="subscribe__button">Send</button>
         </form>
       </div>
@@ -642,7 +645,7 @@
             <h3 class="footer__title footer__title--mb-34px">
               Send us a message
             </h3>
-            <form action="send.php" method="POST" class="form footer__form">
+            <form action="send.php" method="POST" class="form footer__form" novalidate="novalidate">
               <div class="footer__input-group">
                 <input
                   type="text"
@@ -650,6 +653,7 @@
                   placeholder="Your Full Name*"
                   name="name"
                   required
+                  aria-invalid="true"
                 />
               </div>
               <!-- /.footer__input-group -->
@@ -660,6 +664,7 @@
                   placeholder="Phone Number*"
                   name="phone"
                   required
+                  maxlength="16"
                 />
               </div>
               <!-- /.footer__input-group -->
@@ -702,7 +707,7 @@
         </a>
         <div class="modal__booking-form">
           <h3 class="modal__title modal__title--mb-3">Booking</h3>
-          <form action="send.php" method="POST" class="form modal__form">
+          <form action="send.php" method="POST" class="form modal__form" novalidate="novalidate">
           <div class="modal__input-group">
             <input
               type="text"
@@ -710,7 +715,7 @@
               placeholder="Your Full Name*"
               name="name"
               required
-              minlength="2"
+              aria-invalid="true"
             />
           </div>
           <div class="modal__input-group">
@@ -720,6 +725,7 @@
               placeholder="Phone Number*"
               name="phone"
               required
+              maxlength="16"
             />
           </div>
           <div class="modal__input-group">
