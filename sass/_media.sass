@@ -14,7 +14,7 @@
   .footer
     &__input
       &-group
-        flex-basis: 100%
+        width: 100%
     &__sponsor
       margin-left: 202px
 @media (max-width: 992px)
@@ -39,6 +39,7 @@
     &__input
       width: 340px
   .hotel
+    padding-bottom: 56px
     &-grid
       flex-direction: column
     &__slider
@@ -52,10 +53,18 @@
   .map
     width: 340px
   .reviews
+    padding: 16px 0 14px 0
+    &__title
+      font-size: 30px
+      margin-bottom: 53px
+      line-height: 38px
     &-slider
       &-item
         max-width: 580px
+      &__avatar
+        margin-bottom: 0
   .activities
+    padding: 29px 0 44px 0
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -63,14 +72,25 @@
   .card
     width: 45%
     height: 255px
+    width: 339px
   .footer
+    padding-top: 80px
     &-wrapper
-      grid-template-columns: repeat(6, 1fr)
-      grid-row-gap: 40px
+      grid-template-columns: repeat(7, 1fr)
+      grid-row-gap: 45px
+      margin-bottom: 56px
+      grid-column-gap: 0
     &__input
+      width: 100%
+      height: 50px
       &-group
-        flex-basis: 48%
+        width: 255px
+    &__message
+      width: 100%
+      height: 123px
+      margin-bottom: 22px
     &__logo
+      width: 96px
       grid-row: 1 / 2
       grid-column: span 2
     &__social
@@ -84,17 +104,18 @@
     &__legal
       grid-column: span 2
     &__additional
-      grid-column: span 2
+      grid-column: span 3
     &__contact
       &-details
         grid-column: span 5
         grid-row: 3
       &-form
-        grid-column: span 5
+        grid-column: span 6
         grid-row: 4
+        max-width: 539px
     &__ul
       &--horizontal
-        margin-bottom: 10px
+        margin-bottom: 0px
     &-bottom
       &-wrapper
         justify-content: space-between
@@ -143,7 +164,7 @@
     .menu
       &-button
         display: flex
-        width: 16px
+        width: 42px
         height: 11px
         padding: 0
         align-items: center
@@ -166,6 +187,7 @@
   .stars
     flex-basis: auto
   .hotel
+    padding-bottom: 56px
     &-name
       flex-basis: 100%
     &-wrapper
@@ -192,6 +214,7 @@
   .map
     width: 100%
   .newsletter
+    padding: 58px 0 65px 0
     &-wrapper
       max-width: 576px
       width: 92%
@@ -220,6 +243,8 @@
     width: 49%
     height: 255px
   .footer
+    &__title
+      margin: 0 0 8px 0
     &__input
       &-group
         flex-basis: 100%
@@ -241,7 +266,7 @@
           &--visible
             width: 70%
   .logo
-    width: 99px
+    width: 100px
   .hotel
     &__slider
       margin-bottom: 20px
@@ -302,6 +327,9 @@
 @media ( max-width: 320px)
   .hotel
     padding-bottom: 40px
+    padding-top: 0
+    &-info
+      padding-bottom: 38px
   .newsletter
     &-title
       font-weight: 300
@@ -311,6 +339,8 @@
         font-weight: 600
         font-size: 30px
         line-height: 38px
+  .stars
+    margin-right: 20px
   .reviews
     padding: 40px 0 0 0
   .activities
