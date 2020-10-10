@@ -1211,6 +1211,21 @@ input:focus, button:focus, textarea:focus {
   padding-bottom: 46px;
 }
 
+.footer__button--back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 .footer-wrapper {
   display: -ms-grid;
   display: grid;
