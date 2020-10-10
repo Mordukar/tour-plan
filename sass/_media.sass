@@ -21,8 +21,6 @@
   .container,
   .newsletter-wrapper
     max-width: 700px
-  .logo
-    width: 132px
   .navbar
     &-top
       padding-top: 30px
@@ -93,11 +91,14 @@
       width: 96px
       grid-row: 1 / 2
       grid-column: span 2
+      &-image
+        height: 109px
     &__social
       &-networks
         grid-row: 1 / 2
         grid-column: span 4
         align-self: center
+        margin-top: 8px
     &__categories
       grid-row: 2 / 3
       grid-column: span 2
@@ -124,7 +125,7 @@
 @media (max-width: 767px)
   .container
     max-width: 576px
-    width: 92%
+    width: 87%
   body
     padding-top: 78px
   .navbar
@@ -272,6 +273,13 @@
       margin-bottom: 20px
     &-slider
       height: 250px
+  .reviews
+    &__title
+      line-height: 23px
+    &-slider
+      &__text
+        max-height: 339px
+        overflow: auto
   .newsletter
     padding: 76px 0 83px 0
     &__title
@@ -284,10 +292,19 @@
     padding: 40px 0 30px 0
   .activities
     padding: 0 0 60px 0
+    &__title
+      margin: 26px 0 36px
+      font-size: 18px
+      line-height: 23px
   .footer
+    &__title
+      margin: 0 0 17px 0
+      &--inline
+        margin: 0 0 20px 0
     &-wrapper
       grid-template-columns: 1fr
       grid-gap: 30px
+      margin-bottom: 31px
     &__logo
       grid-row: 1
       grid-column: 1
@@ -295,23 +312,41 @@
       &-networks
         grid-row: 2
         grid-column: 1
+        flex-direction: column
     &__additional
-      grid-row: 3
-      grid-column: 1
-    &__categories
       grid-row: 4
       grid-column: 1
-    &__legal
+    &__categories
       grid-row: 5
+      grid-column: 1
+    &__legal
+      grid-row: 3
       grid-column: 1
       justify-self: start
     &__contact
       &-details
         grid-row: 6
         grid-column: 1
+        margin-top: 8px
       &-form
         grid-row: 7
-        grid-column: 1
+        grid-column: 1 / 2
+        margin-top: 10px
+    &__message
+      margin-bottom: 15px
+    &__ul
+      &--horizontal
+        margin-bottom: 8px
+    &__form
+      flex-direction: column
+      align-items: flex-start
+    &__input
+      &-group
+        width: 100%
+    &__button
+      order: 1
+    &__info
+      margin-bottom: 15px
     &__disclaimer
       grid-row: 8
       margin: 0
@@ -326,10 +361,14 @@
       justify-self: start
 @media ( max-width: 320px)
   .hotel
-    padding-bottom: 40px
+    padding-bottom: 33px
     padding-top: 0
     &-info
       padding-bottom: 38px
+    &-slider
+      height: 179px
+    &-right
+      min-height: 403px
   .newsletter
     &-title
       font-weight: 300
@@ -342,10 +381,15 @@
   .stars
     margin-right: 20px
   .reviews
-    padding: 40px 0 0 0
+    padding: 35px 0 0 0
+    &__title
+      max-width: 245px
+      margin: 0 auto 37px
+      font-size: 18px
   .activities
-    padding: 0 0 60px 0
+    padding: 0 0 47px 0
   .footer
+    padding-top: 67px
     &-wrapper
       grid-template-columns: minmax(100px, 300px)
   .navbar
@@ -354,3 +398,5 @@
         &--mobile
           &--visible
             width: 90%
+  .map
+    height: 173px
