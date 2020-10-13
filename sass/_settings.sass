@@ -55,9 +55,26 @@ label.invalid
   padding-top: 50px
   padding-left: 5px
   font-size: 12px
+  font-weight: bold
 .link
   text-decoration: none
   color: inherit
 input, button, textarea
   &:focus
     outline: none
+@media (min-width: 992px)
+  .navbar-menu__link:hover
+    color: $primary
+  .link:hover
+    color: red
+  .button:hover
+    color: $primary
+    background-color: $light
+  .card__button:hover
+    color: $primary
+    background-color: $light
+  .search__button:hover
+    background-color: $footer-text-color
+  .subscribe__button:hover
+    color: $primary
+    background-color: $footer-text-color
